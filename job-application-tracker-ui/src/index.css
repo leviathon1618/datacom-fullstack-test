@@ -1,0 +1,131 @@
+/* colour-palette */
+
+/* darkest */
+/* #3c7678 --dark-color*/
+/* #568c89 --semi-dark-color*/
+/* #6fa29b --middle-color*/
+/* #89b9ad --semi-light-color*/
+/* #a3d1bf --light-color*/
+/* lightest */
+:root{
+  --dark-color:#2e5859;
+  --semi-dark-color: #568c89;
+  --middle-color: #6fa29b;
+  --semi-light-color: #89b9ad;
+  --light-color: #a3d1bf;
+  --lightest-color: #bad8cc;
+}
+body {
+  background-color: var(--light-color);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1{
+  font-size:40px;
+  color:var(--dark-color);
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  font-size: 30px;
+  color: var(--dark-color);
+  display: flex;
+  justify-content: flex-start;
+}
+form{
+  width: 100%;
+  display:inline-flex;
+  justify-content: space-between;
+}
+form > div{
+  display: flex;
+  flex-direction: column;
+  padding:0 10px;
+}
+.main-body{
+  margin:0 20%;
+  
+}
+table{
+  width:100%;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: var(--semi-light-color);
+}
+
+thead{
+  text-align: left;
+}
+td{
+  
+  padding:5px 0;
+  border-spacing: 0px;
+}
+#actions{
+  float: right;
+  border: none;
+}
+#first_column{
+  padding-left: 10px;
+}
+#edit{
+  background-color:var(--light-color);
+  padding-left: 10px;
+}
+#submit_container{
+  justify-content: end;
+}
+#submit_button {
+  float: left;
+  height: 30px;
+}
+label,select,th,td{
+  color:var(--dark-color);
+}
+select  {
+  font-size: 16px;
+  height:25px;
+  padding:0px 10px;
+  text-align: left;
+  background-color: var(--lightest-color);
+  color:var(--dark-color);
+  border-radius: 5px;
+}
+button{
+  padding: 5px 15px;
+  border-radius: 5px;
+  border-width: 0;
+  color: var(--dark-color);
+}
+button:hover{
+  background-color: var(--semi-light-color);
+}
+input{
+  height:auto;
+  width: auto;
+  border-radius: 5px;
+  border-width: 0px;
+  background-color: var(--lightest-color);
+  border: 1px solid var(--dark-color);
+}
